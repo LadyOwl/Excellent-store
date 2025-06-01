@@ -29,6 +29,10 @@ store1 = Store("Продукты", ул. Мира, 15)
 store2 = Store("Запчасти", ул. Новая, 235)
 store3 = Store("Косметика", ул. Ленина, 96)
 
+store1.add_item("Молоко", 120)
+store1.add_item("Хлеб", 45)
+store1.add_item("Яблоки", 60)
+
 
 
 
