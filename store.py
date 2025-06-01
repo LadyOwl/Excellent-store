@@ -25,6 +25,14 @@ def update_price(self, item_name, new_price):
     else:
         print(f"Товар {item_name} Невозможно обновить цену")
 
+store1 = Store("Продукты", ул. Мира, 15)
+store2 = Store("Запчасти", ул. Новая, 235)
+store3 = Store("Косметика", ул. Ленина, 96)
+
+
+
+
+
 
 
 
