@@ -33,6 +33,12 @@ store1.add_item("Молоко", 120)
 store1.add_item("Хлеб", 45)
 store1.add_item("Яблоки", 60)
 
+store2.add_item("Диски", 15300)
+store2.add_item("Свеча зажигания", 220)
+store2.add_item("Ремень", 4600)
+
+
+
 
 
 
