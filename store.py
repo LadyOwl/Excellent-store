@@ -16,7 +16,12 @@ class Store():
             print(f"Товар {item_name} не найден")
 
     def get_price(self, item_name):
-        return self.items.get(item_name)
+        price = self.items.get(item_name)
+        if price is not None:
+            return price
+        else:
+            print(f"Товар '{item_name}' не найден.")
+            return None
 
     def update_price(self, item_name, new_price):
         if item_name in self.items:
@@ -44,15 +49,16 @@ store3.add_item("Средство для волос", 640)
 store2.add_item("Масло трансмиссионное", 2700)
 store2.update_price("Ремень", 5000)
 store2.remove_item("Свеча зажигания")
+
 price = store2.get_price("Диски")
 print(f"\nЦена товара 'Диски': {price} руб.")
-
-price_none = store2.get_price("Фильтр масляный")
-print(f"Товар 'Фильтр масляный' не найден!: {price_none}")
 
 print("\nТекущий ассортимент магазина 'Запчасти':")
 for item, price in store2.items.items():
     print(f"{item}: {price} руб.")
+
+item_name = "Фильтр масляный"
+price = store2.get_price(item_name)
 
 
 
